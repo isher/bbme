@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta property="og:image" content="https://bbme.qsis.cn/logo.png">
+<link rel="image_src" href="https://bbme.qsis.cn/logo.png">
+
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="alternate" type="application/rss+xml" href="https://bbme.qsis.cn/rss.xml" title="深悟笔记 RSS 订阅">
+<meta name="thumbnail" content="https://bbme.qsis.cn/upload/month_2005/d788d43f8794a4c25d906fad49c7b6d1ac6e39b8.jpeg?">
+<meta name="description" centent="华为P30Pro的50倍变焦到底是个什么概念？是如何工作的？华为p30Pro一共有4个摄像头，除去特殊功能的景深镜头，主要有三个，主设等效焦距27毫米，广角等效...">
+
+
+
+
+
+
+    <title>手机光学变焦倍数分析和算法分析-华为P30pro - </title>
+
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <link rel="icon" type="image/png" href="https://bbme.qsis.cn/upload/images/tech.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="site" content="https://bbme.qsis.cn">
+    <meta property="og:image" content="/upload/images/tech.png">
+    <link rel="stylesheet" href="https://me.qsis.cn:88/static_site/files/theme/cnblog/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="深悟笔记 | 卑鄙的我"/>
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深悟笔记 | 卑鄙的我">
+    <script>var canonicalUrl = window.location.href.replace(/me.qsis.cn:88/,'bbme.qsis.cn');var link = document.createElement('link');link.rel = 'canonical';link.href = canonicalUrl;document.head.appendChild(link);</script>
+<style>
+.post-thumb {
+  width: 100px;
+  height: 100px;
+}
+.post-thumb canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<body>
+	<div id="home"> 
+    <div id="header"> 
+        <div id="blogTitle"> 
+            <!--done--> 
+            <img src="https://bbme.qsis.cn/files/theme/cnblog/images/bg-top.png" alt="qsis cms header pic">
+            <div class="title">
+<a href="https://bbme.qsis.cn" class="logo">深悟笔记 | 卑鄙的我</a>
+            </div> 
+        </div>
+    </div>
+    <div id="navigator"> 
+        <ul id="navList"> 
+            <div class="menu-main"><ul><li><a href="https://bbme.qsis.cn/" target="_self">首页</a></li><li><a href="https://bbme.qsis.cn/tag/技术文章/" target="_self">IT技术</a></li><li><a href="https://bbme.qsis.cn/tag/Qsis/" target="_self">Qsis</a></li><li><a href="https://bbme.qsis.cn/tag/想法/" target="_self">想法</a></li><li><a href="https://bbme.qsis.cn/tag/日常/" target="_self">日常</a></li><li><a href="https://bbme.qsis.cn/video.html" target="_blank">电影</a></li><li><a href="https://bbme.qsis.cn/qiaoshuo.html" target="_blank">关于</a></li><li><a href="https://jx.nnxv.cn/zbo/b.php" target="_blank">直播</a></li><li><a href="https://jx.nnxv.cn/?type=movie" target="_blank">综合查询</a></li></ul></div></div>
+        </ul> 
+    </div>
+
+
+
+<div id="main"> 
+    <div id="container"> 
+                    <div id="topics"> 
+                        <div class="post"> 
+                            <h1 class="postTitle">手机光学变焦倍数分析和算法分析-华为P30pro</h1>                            
+                            <div class="postBody"> 
+                                <!-- 文章作者、发布时间 -->
+                                <div class="meta" style="margin-bottom: 30px;">
+                                                                    </div>
+
+                                <!-- 文章正文内容 -->
+                                <div id="article-content"><p>华为P30Pro的50倍变焦到底是个什么概念？是如何工作的？</p><p><span>华为p30Pro一共有4个摄像头，除去特殊功能的景深镜头，主要有三个，主设等效焦距27毫米，广角等效16毫米，长焦等效125毫米，长焦与主摄的比值125:27大约等于5，所以这就是所谓的5倍光学变焦。其实严格意义上来说这并不是光学变焦而是3个定焦镜头再通过数码变焦以及一系列算法来实现的连续变焦。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/d788d43f8794a4c25d906fad49c7b6d1ac6e39b8.jpeg?" data-loaded="0" alt="" /></div><p><span>那么发布会上说的50倍变焦到底是什么意思呢？华为的这几个摄像头是如何工作的？首先在普通的视角下当然是使用主摄像头那么在1.1~2.9倍变焦，中间使用的是主摄像头进行数码变焦，而从三倍到4.9倍变焦，使用的是中间的这一部分画质是由长焦摄像头进行拍摄的，而旁边的这一圈长焦拍不到的部分使用的是主摄像头进行数码变焦来补充。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/342ac65c10385343b22196a5db201d7acb80887b.jpeg?" data-loaded="0" alt="" /></div><p><span>所以中心的画质会比较好而边缘的画质呢，会相对的差一些，而到了5倍变焦我可以明显看到从4.9~5倍的时候有一个摄像头切换的动作，所以呢，很明显在5倍变焦的时候他使用的是5倍长焦，也就是那个潜望镜头进行拍摄，而从5倍变焦到10倍变焦，是三个摄像头都会工作。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/7e3e6709c93d70cf87d491f4b0ef7c04bba12bd0.jpeg?" data-loaded="0" alt="" /></div><p><span>当然了肯定是以这个5倍为主来进行数码变焦主摄像头和广角摄像头呢，也会同时用于成像，用来弥补一些由于数码变焦而损失掉的画质，而从10倍往上一直到50倍变焦呢，其实都是主要依靠的5倍长焦镜头来进行数码变焦主摄和广角在这个距离呢所占的比重太少，所以呢，基本上可以忽略。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/279759ee3d6d55fb9caa49d63d11e24e21a4dd8d.jpeg?" data-loaded="0" alt="" /></div><p><span>所以呢对于p30Pro来说有几个点是比较重要的也就是他开始切换策略的那几个点分别是三倍变焦的时候以及5倍变焦的时候以及10倍变焦的时候，因此我使用p30不知道分别拍摄的焦距为一倍1.9倍，2.1倍，2.9倍，3.1倍，4.9倍，5.1倍10倍以及50倍的照片，接下来我们用样张来依次分析一下华为p30Pro的变焦策略。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/622762d0f703918fb7d711ea000e8b9359eec447.jpeg?" data-loaded="0" alt="" /></div><p><span>我会把使用不同焦距拍摄的照片的局部放大到差不多相同的大小，后来对比画面的质量，因为是在侧面教，所以今天的重点是清晰度，为了节省大家的时间，我后面会直接给大家呈现局部的放大图，图片上会标出来，分别是用什么样的焦距以及使用了什么样的镜头组合和算法。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/cf1b9d16fdfaaf517315adfac66739eaf11f7abc.jpeg?" data-loaded="0" alt="" /></div><p><span>首先1倍当然是主摄像头直接成像而1.9倍是通过主摄像头的数码变焦，但大家可以看到这里的清晰度是要明显高于1倍的时候，所以呢，应该还使用了一些算法，进行优化1.9倍到2.1倍再到2.9倍，依然还是使用主摄像头的数码变焦，所以呢，画质表现上基本差不多，而从2.9倍到3.1倍。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/80cb39dbb6fd5266d672e899e32b3a2fd507369d.jpeg?" data-loaded="0" alt="" /></div><p><span>由于算法出现了变化就像我们刚才所说的3倍到5倍之间由长焦拍摄中间的部分，而主摄像头通过数码变焦来补充边缘的部分，由于长焦镜头的加入使得清晰度有了一个明显的提升，并且大家通过看这张图可以发现中间部分的清晰度要明显优于边缘部分。从3.1倍到4.9倍都是相同的策略我们再进一步的进行放大，可以发现清晰度有小幅度的提升。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/902397dda144ad341be684fe9891a1f031ad8521.jpeg?" data-loaded="0" alt="" /></div><p><span>应该是由于长焦镜头所占的比重越来越大的原因，而从4.9倍到5.1倍，这里有算法合成的照片变成了仅依靠5倍长焦镜头成像清晰度上又有了一个小幅度的提升，并且大家可以发现在这种情况下照片的边缘和中心的清晰度并没有明显的区别，接下来5.1倍到10倍，华为的说法是会以5倍长焦为主依靠主摄像头和广角镜头进行辅助，从而达到无损变焦。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/43a7d933c895d143bb6a31103bc32f065aaf0798.jpeg?" data-loaded="0" alt="" /></div><p><span>但实际上我们可以看出来5倍和10倍，在清晰度上并没有什么明显的区别，应该是因为在这个阶段主摄和广角镜头能做的事儿，真的是非常的少，这里我说的稍微详细一些，比如我们以10倍为例，这个时候呢，相当于长焦镜头进行了两倍的数码变焦，长焦镜头的CMOS原始面积是25.57两倍，变焦长和宽都变成了一半，所以呢，体积缩小了2的平方也就是4倍，真正可以用到的CMOS面积只有6.39。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/4034970a304e251f2b692dc7f7b564137f3e532f.jpeg?" data-loaded="0" alt="" /></div><p><span>主摄像头的CMOS，原始面积为89，进行了10倍的数码变焦除以100，可用的仅仅只有0.89，而广角镜头就更惨了，相当于进行了15.6倍的数码变焦原始CMOS面积为33.84，算下来仅仅只有0.14，所以会说主摄和广角镜头在这个焦段能够做的是非常的少，基本上还是要靠长焦镜头的数码变焦。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/50da81cb39dbb6fdbd8027d34117061c962b3720.jpeg?" data-loaded="0" alt="" /></div><p><span>在网上我们也可以发现50倍焦距和把10倍焦距拍摄的照片直接裁切放大，基本上也差不多甚至10倍焦距照片直接放大的效果反而更好一些，我们在把5倍焦距拍摄的照片直接放大，和50倍变焦进行对比其实也差不多。</span></p><div class="img-container" style="margin-top: 30px;"><img data-loadfunc="0" src="https://bbme.qsis.cn/upload/month_2005/e824b899a9014c08ebb0b9e04248af0c7af4f4a0.jpeg?" data-loaded="0" alt="" /></div><p><span>这里总结一下，华为P30pro的潜望式5倍长焦镜头对比传统的2倍变焦的长焦镜头在拍摄远处物体的时候有明显的优势，在3到5倍的时候使用了双镜头配合再加上算法合成的方法，对于画质的提升还是有比较明显的效果，也使得在主摄和长焦镜头中间的焦段不至于出现明显的画质降低的断层，而从5倍以上清晰度就不会有太大的变化了。</span></p><br /></div> 
+                            </div> 
+
+                            <div id="MySignature"></div> 
+                            <div class="clear"></div> 
+                            
+                            <div id="blog_post_info_block"> 
+                                <div id="blog_post_info"></div> 
+                                <div class="clear"></div> 
+                                <div id="post_next_prev"></div> 
+                            </div> 
+                                                    <!-- 文章标签 -->
+                        <div class="postDesc">
+                            posted @ 
+                            <span id="post-date"> 标签：<a href="https://bbme.qsis.cn/tag/华为手机/index.html">华为手机</a> <a href="https://bbme.qsis.cn/tag/拍照/index.html">拍照</a> <a href="https://bbme.qsis.cn/tag/it/index.html">it</a></span>
+                        </div> 
+                        <div class="postDesc">
+                            <span id="post-date">2020-03-08</span>
+                        </div> 
+                        
+                        <!-- 返回按钮：首页/目录 -->
+                                                    <a href="https://bbme.qsis.cn/" class="btn">返回首页</a>
+                                                </div>
+
+
+
+                    </div>
+            </div>
+        
+    <div id="sideBar">
+
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">文章搜索</h3>
+  <div class="sideBarbox"> 
+  <input type="text" id="search-input" placeholder="搜索文章…" autocomplete="off">
+  <div id="search-result"></div>
+</div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">RSS阅读</h3>
+  <div class="sideBarbox"> 
+<div style="font-size:14px;">   <a href="https://swbj.qsis.cn/rss.xml" target="_blank" style="text-decoration:none; color:#333;">     <img src="https://www.w3schools.com/xml/pic_rss.gif"           alt="RSS 订阅"           style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">     订阅 RSS / Feed   </a> </div></div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">手机扫码看本文</h3>
+<div class="sideBarbox">
+<div class="qrcode" data-url="<br />
+<b>Warning</b>:  Undefined variable $post_url in <b>/www/bbme/ccc/files/static_theme/cnblog/side.php</b> on line <b>28</b><br />
+"></div>
+您可以通过手机语音助手指令“骚猫二维码”，进行扫描并打开浏览器进行阅读，也可以通过微信扫一扫阅读文章。
+</div>
+</div>
+ <div id="sideBarMain">
+<h3 class="catListTitle">摘要</h3>
+    
+        <div class="sideBarbox">
+        <img src="https://bbme.qsis.cn/upload/month_2005/d788d43f8794a4c25d906fad49c7b6d1ac6e39b8.jpeg?" alt="封面" class="book-cover">
+    </div>
+    
+            <div class="sideBarbox">
+            华为P30Pro的50倍变焦到底是个什么概念？是如何工作的？华为p30Pro一共有4个摄像头，除去特殊功能的景深镜头，主要有三个，主设等效焦距27毫米，广角等效16毫米，长焦等效125毫米，长焦与主摄的比值125:27大约等于5，所以这就是所谓的5倍光学变焦。其实严格意义上来说这并不是光学变焦而是3个定焦镜头再通过数码变焦以及一系列算法来实现的连续变焦。那么发布会上说的50倍变焦到底是什么意思呢？...        </div>
+        <div class="clear"></div>
+
+  </div>
+
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">链接</h3>
+
+</div>  
+<div class="sideBarbox">
+<ul><li><a href="https://bbme.qsis.cn/contact.html" target="_self">联系</a></li><li><a href="https://bbme.qsis.cn/liuyan.html" target="_self">留言</a></li><li><a href="https://i.qsis.cn:88/music/" target="_self">音乐节拍</a></li><li><a href="https://i.qsis.cn:88/musiccy/" target="_self">初音未来</a></li><li><a href="https://bbme.qsis.cn/tools.html" target="_blank">工具链接</a></li><li><a href="https://bbme.qsis.cn/login/" target="_blank">登录</a></li></ul></div>
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">关于</h3>
+<div class="sideBarbox">
+以礼立界，学以致用，友以逆正，谋以利成。
+这里是QSIS.CMS开的开发笔记，同时也写以技术思维写一些个人技术及生活的小笔记。</div>
+</div>
+
+
+
+
+<div id="sideBarTop">
+<h3 class="catListTitle">乔硕</h3>
+<div class="sideBarbox">
+<a href="https://bbme.qsis.cn/qiaoshuo.html" title="乔硕：跨界型全能人才"><img src="https://swbj.qsis.cn/upload/images/qiaoshuo.jpg "></a>
+</div>
+</div>
+
+</div>
+
+    </div>
+</div>
+
+
+<div class="clear"></div>
+
+  <div id=footer><a href=login.php>京ICP备10003015-3</a> Powerby <a href="https://download.qsis.cn" target="_blank">Qsis.G3M CMS系统</a> Designed and Diveloped By <a href="https://swbj.qsis.cn/qiaoshuo/" target="_blank">isher.Qiao</a></div>
+      <div><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?952e13a89d5fee015b5e6508cd6971cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+</div>
+<script>
+function toggleSidebar() {
+    const sideBar = document.getElementById('sideBar');
+    const btn = document.querySelector('.sidebar-toggle');
+    
+    sideBar.classList.toggle('collapsed');
+
+    if (sideBar.classList.contains('collapsed')) {
+        btn.textContent = '≡ 展开';
+    } else {
+        btn.textContent = '≡ 折叠';
+    }
+}
+</script>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
+
+<script>
+// 加载搜索索引
+let searchIndex = [];
+
+async function loadSearchIndex() {
+  try {
+    const res = await fetch('/search-index.json');
+    searchIndex = await res.json();
+    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
+  } catch (err) {
+    console.error('搜索索引加载失败', err);
+  }
+}
+
+// 执行搜索
+function doSearch(keyword) {
+  const resultBox = document.getElementById('search-result');
+  resultBox.innerHTML = '';
+
+  if (!keyword.trim()) {
+    return;
+  }
+
+  const kw = keyword.toLowerCase();
+  const matched = searchIndex.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+    return title.includes(kw) || content.includes(kw);
+  });
+
+  if (matched.length === 0) {
+    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
+    return;
+  }
+
+  let html = '';
+  matched.forEach(item => {
+    html += `
+<div class="search-item">
+  <a href="${item.url}" target="_blank">${item.title}</a>
+  <div class="desc">${item.content.substring(0, 120)}...</div>
+</div>
+    `;
+  });
+
+  resultBox.innerHTML = html;
+}
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadSearchIndex();
+
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => {
+    doSearch(e.target.value);
+  });
+});
+</script>
+<script>
+$(function(){
+    $('.qrcode').each(function(){
+        $(this).qrcode({
+            text: $(this).data('url'),
+            width: 100,
+            height: 100,
+            draw: false   // 👈 就是加这一句，关闭文字显示
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
+

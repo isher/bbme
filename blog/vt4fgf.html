@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta property="og:image" content="https://bbme.qsis.cn/logo.png">
+<link rel="image_src" href="https://bbme.qsis.cn/logo.png">
+
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="alternate" type="application/rss+xml" href="https://bbme.qsis.cn/rss.xml" title="深悟笔记 RSS 订阅">
+<meta name="thumbnail" content="https://bbme.qsis.cn/upload/images/tech.png">
+<meta name="description" centent="https://learn.microsoft.com/zh-cn/windows-hardware/get-started/adk-install#downl...">
+
+
+
+
+
+
+    <title>自己制作一个纯净的WINPE系统 - </title>
+
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <link rel="icon" type="image/png" href="https://bbme.qsis.cn/upload/images/tech.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="site" content="https://bbme.qsis.cn">
+    <meta property="og:image" content="/upload/images/tech.png">
+    <link rel="stylesheet" href="https://me.qsis.cn:88/static_site/files/theme/cnblog/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="深悟笔记 | 卑鄙的我"/>
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深悟笔记 | 卑鄙的我">
+    <script>var canonicalUrl = window.location.href.replace(/me.qsis.cn:88/,'bbme.qsis.cn');var link = document.createElement('link');link.rel = 'canonical';link.href = canonicalUrl;document.head.appendChild(link);</script>
+<style>
+.post-thumb {
+  width: 100px;
+  height: 100px;
+}
+.post-thumb canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<body>
+	<div id="home"> 
+    <div id="header"> 
+        <div id="blogTitle"> 
+            <!--done--> 
+            <img src="https://bbme.qsis.cn/files/theme/cnblog/images/bg-top.png" alt="qsis cms header pic">
+            <div class="title">
+<a href="https://bbme.qsis.cn" class="logo">深悟笔记 | 卑鄙的我</a>
+            </div> 
+        </div>
+    </div>
+    <div id="navigator"> 
+        <ul id="navList"> 
+            <div class="menu-main"><ul><li><a href="https://bbme.qsis.cn/" target="_self">首页</a></li><li><a href="https://bbme.qsis.cn/tag/技术文章/" target="_self">IT技术</a></li><li><a href="https://bbme.qsis.cn/tag/Qsis/" target="_self">Qsis</a></li><li><a href="https://bbme.qsis.cn/tag/想法/" target="_self">想法</a></li><li><a href="https://bbme.qsis.cn/tag/日常/" target="_self">日常</a></li><li><a href="https://bbme.qsis.cn/video.html" target="_blank">电影</a></li><li><a href="https://bbme.qsis.cn/qiaoshuo.html" target="_blank">关于</a></li><li><a href="https://jx.nnxv.cn/zbo/b.php" target="_blank">直播</a></li><li><a href="https://jx.nnxv.cn/?type=movie" target="_blank">综合查询</a></li></ul></div></div>
+        </ul> 
+    </div>
+
+
+
+<div id="main"> 
+    <div id="container"> 
+                    <div id="topics"> 
+                        <div class="post"> 
+                            <h1 class="postTitle">自己制作一个纯净的WINPE系统</h1>                            
+                            <div class="postBody"> 
+                                <!-- 文章作者、发布时间 -->
+                                <div class="meta" style="margin-bottom: 30px;">
+                                                                    </div>
+
+                                <!-- 文章正文内容 -->
+                                <div id="article-content">https://learn.microsoft.com/zh-cn/windows-hardware/get-started/adk-install#download-the-adk-101261002454-december-2024<br /><br />创建可启动的 Windows PE 媒体<br />文章<br />2024 年 4 月 10 日<br />9 位贡献者<br /><br /><br />更新 Windows ADK 的 Windows PE 加载项<br />步骤 1：创建工作文件<br />步骤2：自定义 Windows PE<br />步骤 3：创建可启动媒体<br />显示另外 2 个<br />Windows 评估和部署工具包(ADK) 部署工具以及ADK Windows PE 附加组件包含可轻松创建可启动 WinPE 媒体的命令行实用程序：<br /><br /><br />CopyPE创建 Windows PE 文件工作集<br />MakeWinPEMedia使用工作文件集来创建可启动的 Windows PE 媒体。MakeWinPEMedia可以创建可启动的 Windows PE USB 驱动器、虚拟硬盘或 ISO，以便您启动 VM 或刻录到 DVD 或 CD。<br />&nbsp;笔记<br /><br /><br />如果您使用的是适用于 Windows 10 版本 1803 或更早版本的 ADK，则在安装过程中选择 Windows 预安装环境选项时，Windows PE 将包含在 ADK 中，并且不需要单独的插件。<br /><br /><br />更新 Windows ADK 的 Windows PE 加载项<br />&nbsp;重要的<br /><br /><br />2024 年 4 月 9 日的 Windows 安全更新应应用于 Windows ADK 10.1.25398.1（2023 年 9 月）及更早版本的 Windows PE 附加组件、Windows Server 2022 的 ADK 以及 Windows 10 版本 2004 及更早版本的 ADK。<br /><br /><br />在创建可启动的 Windows PE 媒体之前，您可以将更新应用于 Windows PE 映像和 Windows ADK 的 Windows PE 附加组件中的启动媒体。此步骤每次更新只需执行一次。随后，从更新的 Windows ADK 的 Windows PE 附加组件创建的所有可启动的 Windows PE 媒体都将应用更新。<br /><br /><br />确保您的电脑已安装 ADK 和 ADK Windows PE 插件。<br /><br /><br />以管理员身份启动部署和映像工具环境。<br /><br /><br />导航到“Windows 预安装环境”文件夹和您选择的处理器体系结构文件夹。请参阅 amd64 文件夹的示例命令：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />cd &quot;..Windows Preinstallation Environmentamd64&quot;<br />装载 Windows PE 启动映像。<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />md C:WinPE_amd64mount<br />Dism /Mount-Image /ImageFile:&quot;en-uswinpe.wim&quot; /index:1 /MountDir:&quot;C:WinPE_amd64mount&quot;<br />将 Windows 更新应用到已装载的映像Apply Windows Update to the mounted image<br /><br /><br />在安装 Windows PE 启动映像时，将启动文件复制回 Windows PE 附加组件安装。<br /><br /><br />&nbsp;重要的<br /><br /><br />您需要根据目标设备的 Windows UEFI 2011 CA 签名启动管理器的撤销状态选择正确的启动媒体，请参阅KB5025885了解更多信息。<br /><br /><br />要创建Windows UEFI 2023 CA 签名的 Windows PE 启动媒体（确保在步骤 #5 中应用了 2024 年 4 月 9 日的 Windows 安全更新）：<br />Windows 命令提示符<br /><br /><br />复制<br />Xcopy &quot;c:WinPE_amd64mountWindowsBootEFI_EXbootmgr_EX.efi&quot; &quot;Mediabootmgr.efi&quot; /Y<br />Xcopy &quot;c:WinPE_amd64mountWindowsBootEFI_EXbootmgfw_EX.efi&quot; &quot;MediaEFIBootbootx64.efi&quot; /Y<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXchs_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontschs_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXcht_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontscht_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXjpn_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsjpn_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXkor_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontskor_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmalgun_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmalgun_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmalgunn_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmalgunn_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmeiryo_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmeiryo_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmeiryon_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmeiryon_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmsjh_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmsjh_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmsjhn_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmsjhn_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmsyh_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmsyh_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXmsyhn_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontsmsyhn_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXsegmono_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontssegmono_boot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXsegoe_slboot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontssegoe_slboot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXsegoen_slboot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontssegoen_slboot.ttf&quot; /Y /-I<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootFonts_EXwgl4_boot_EX.ttf&quot; &quot;MediaEFIMicrosoftBootFontswgl4_boot.ttf&quot; /Y /-I<br />要创建 Windows UEFI 2011 CA 签名的 Windows PE 启动媒体：<br />Windows 命令提示符<br /><br /><br />复制<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootEFIbootmgr.efi&quot; &quot;Mediabootmgr.efi&quot; /Y<br />Xcopy &quot;C:WinPE_amd64mountWindowsBootEFIbootmgfw.efi&quot; &quot;MediaEFIBootbootx64.efi&quot; /Y<br />卸载 WinPE 映像并提交更改。<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />Dism /Unmount-Image /MountDir:&quot;C:WinPE_amd64mount&quot; /commit<br />步骤 1：创建工作文件<br />无论您要创建哪种类型的媒体，首先要做的就是在技术人员电脑上创建一组可用的 Windows PE 文件。<br /><br /><br />确保您的电脑已安装 ADK 和 ADK Windows PE 插件。<br /><br /><br />以管理员身份启动部署和映像工具环境。<br /><br /><br />运行copype以创建 Windows PE 文件的工作副本。有关 copype 的更多信息，请参阅Copype 命令行选项。<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />copype amd64 C:WinPE_amd64<br />步骤2：自定义 Windows PE<br />以下自定义很常见，但并非每个 Windows PE 映像都需要自定义。向 Windows PE 添加软件包时，可能会降低性能并缩短启动时间。仅在必要时添加其他软件包。<br /><br /><br />常见自定义<br />对于 Windows 11：如果您从 Windows PE 启动 Windows 安装程序，请添加WinPE-WMI 和 WinPE-SecureStartup 可选组件。如果不包含这些可选组件，您可能会看到一条错误，提示您的 PC 不满足最低硬件要求。<br />添加更新。要了解更多信息，请参阅：WinPE：挂载和自定义。<br />添加视频或网络驱动程序。（Windows PE 包含通用视频和网络驱动程序，但在某些情况下，需要额外的驱动程序来显示屏幕或连接到网络。）要了解更多信息，请参阅WinPE：添加驱动程序。<br />添加 PowerShell 脚本支持。要了解更多信息，请参阅WinPE：向 Windows PE 添加 Windows PowerShell 支持。此实验室不包含 PowerShell 脚本。<br />将电源方案设置为高性能。加快部署速度。请注意，我们的示例部署脚本已自动设置此方案。请参阅 WinPE：安装和自定义：高性能。<br />优化 Windows PE：建议用于 RAM 和存储有限的设备（例如，1GB RAM/16GB 存储）。将驱动程序或其他自定义项添加到 Windows PE 后，请参阅映像优化以帮助减少启动时间。<br />步骤 3：创建可启动媒体<br />现在您有了一组工作文件，您可以使用MakeWinPEMedia来构建可启动的 WinPE 媒体。<br /><br /><br />创建可启动的 Windows PE USB 驱动器<br />将 USB 驱动器连接到技术人员电脑。<br /><br /><br />以管理员身份启动部署和映像工具环境。<br /><br /><br />可选 您可以在运行 MakeWinPEMedia 之前格式化 USB 密钥。MakeWinPEMedia 会将您的 Windows PE 驱动器格式化为 FAT32。如果您希望能够在 Windows PE USB 驱动器上存储大于 4GB 的文件，您可以创建一个多分区 USB 驱动器，该驱动器具有一个格式化为 NTFS 的附加分区。有关说明，请参阅创建多分区 USB 驱动器。<br /><br /><br />使用MakeWinPEMedia并/UFD选择格式化并将 Windows PE 安装到 USB 闪存驱动器，并指定 USB 密钥的驱动器号：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />MakeWinPEMedia /UFD C:WinPE_amd64 P:<br />&nbsp;警告<br /><br /><br />此命令重新格式化分区。<br /><br /><br />查看MakeWinPEMedia 命令行选项以了解所有可用选项。<br /><br /><br />可启动的 Windows PE USB 驱动器已准备就绪。您可以使用它将PC 启动到 Windows PE。<br /><br /><br />创建 WinPE ISO、DVD 或 CD<br />使用MakeWinPEMedia并/ISO选择创建包含 Windows PE 文件的 ISO 文件：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />MakeWinPEMedia /ISO C:WinPE_amd64 C:WinPE_amd64WinPE_amd64.iso<br />可选刻录 DVD 或 CD：在 Windows 资源管理器中，右键单击 ISO 文件，然后选择刻录光盘映像&gt;刻录，然后按照提示进行操作。<br /><br /><br />创建用于 Hyper-V 的 Windows PE VHD<br />您可以创建可启动的 VHD 以与 Hyper-V 一起使用。<br /><br /><br />&nbsp;提示<br /><br /><br />如果您计划在 Hyper-V 中运行 Windows PE，请考虑使用 ISO 文件格式而不是 VHD，以便更快地设置虚拟 PC。<br /><br /><br />要将 Windows PE 安装到 VHD，请执行以下操作：<br /><br /><br />创建虚拟硬盘 (.vhdx)：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />diskpart<br />create vdisk file=&quot;C:WinPE.vhdx&quot; maximum=1000<br />attach vdisk<br />create partition primary<br />assign letter=V<br />format fs=ntfs quick<br />exit<br />使用MakeWinPEMedia准备驱动器：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制<br />MakeWinPEMedia /UFD C:WinPE_amd64 V:<br />分离驱动器：<br /><br /><br />Windows 命令提示符<br /><br /><br />复制diskpart<br />select vdisk file=&quot;C:WinPE.vhdx&quot;<br />detach vdisk<br />exit<br />从您创建的媒体启动<br />现在您已经创建了可启动的 Windows PE 媒体，您可以使用它来启动您的 PC。<br /><br /><br />将媒体插入您要启动的电脑。<br />打开电脑。<br />按下可打开启动菜单的按键或按键组合。此按键或按键组合因您的 PC 制造商而异。如果您不知道哪个按键组合可打开 PC 的启动菜单，请联系您的 PC 制造商。<br />从启动菜单中，选择可启动的 Windows PE 媒体。<br />您的电脑将启动到 Windows PE。<br /><br /><br />故障排除<br />如果未出现 Windows PE，请尝试以下解决方法，每次重新启动 PC：<br /><br /><br />要启动支持 UEFI 模式的 PC：在固件启动菜单中，尝试手动选择启动文件：EFIBOOTBOOTX64.EFI。<br />如果您的 PC 需要存储或视频驱动程序才能启动，请尝试将相同的驱动程序添加到 Windows PE 映像。有关更多信息，请参阅WinPE：装载和自定义。<br />如果 PC 未连接到网络位置，请参阅WinPE 网络驱动程序：初始化和添加驱动程序。<br /><br /></div> 
+                            </div> 
+
+                            <div id="MySignature"></div> 
+                            <div class="clear"></div> 
+                            
+                            <div id="blog_post_info_block"> 
+                                <div id="blog_post_info"></div> 
+                                <div class="clear"></div> 
+                                <div id="post_next_prev"></div> 
+                            </div> 
+                                                    <!-- 文章标签 -->
+                        <div class="postDesc">
+                            posted @ 
+                            <span id="post-date"> 标签：<a href="https://bbme.qsis.cn/tag/winpe/index.html">winpe</a> <a href="https://bbme.qsis.cn/tag/制作winpe/index.html">制作winpe</a></span>
+                        </div> 
+                        <div class="postDesc">
+                            <span id="post-date">2025-03-10</span>
+                        </div> 
+                        
+                        <!-- 返回按钮：首页/目录 -->
+                                                    <a href="https://bbme.qsis.cn/" class="btn">返回首页</a>
+                                                </div>
+
+
+
+                    </div>
+            </div>
+        
+    <div id="sideBar">
+
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">文章搜索</h3>
+  <div class="sideBarbox"> 
+  <input type="text" id="search-input" placeholder="搜索文章…" autocomplete="off">
+  <div id="search-result"></div>
+</div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">RSS阅读</h3>
+  <div class="sideBarbox"> 
+<div style="font-size:14px;">   <a href="https://swbj.qsis.cn/rss.xml" target="_blank" style="text-decoration:none; color:#333;">     <img src="https://www.w3schools.com/xml/pic_rss.gif"           alt="RSS 订阅"           style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">     订阅 RSS / Feed   </a> </div></div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">手机扫码看本文</h3>
+<div class="sideBarbox">
+<div class="qrcode" data-url="<br />
+<b>Warning</b>:  Undefined variable $post_url in <b>/www/bbme/ccc/files/static_theme/cnblog/side.php</b> on line <b>28</b><br />
+"></div>
+您可以通过手机语音助手指令“骚猫二维码”，进行扫描并打开浏览器进行阅读，也可以通过微信扫一扫阅读文章。
+</div>
+</div>
+ <div id="sideBarMain">
+<h3 class="catListTitle">摘要</h3>
+    
+    
+            <div class="sideBarbox">
+            https://learn.microsoft.com/zh-cn/windows-hardware/get-started/adk-install#download-the-adk-101261002454-december-2024创建可启动的 Windows PE 媒体文章2024 年 4 月 10 日9 位贡献者更新 Windows ADK 的 Windows PE 加载项步骤 1：创建工...        </div>
+        <div class="clear"></div>
+
+  </div>
+
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">链接</h3>
+
+</div>  
+<div class="sideBarbox">
+<ul><li><a href="https://bbme.qsis.cn/contact.html" target="_self">联系</a></li><li><a href="https://bbme.qsis.cn/liuyan.html" target="_self">留言</a></li><li><a href="https://i.qsis.cn:88/music/" target="_self">音乐节拍</a></li><li><a href="https://i.qsis.cn:88/musiccy/" target="_self">初音未来</a></li><li><a href="https://bbme.qsis.cn/tools.html" target="_blank">工具链接</a></li><li><a href="https://bbme.qsis.cn/login/" target="_blank">登录</a></li></ul></div>
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">关于</h3>
+<div class="sideBarbox">
+以礼立界，学以致用，友以逆正，谋以利成。
+这里是QSIS.CMS开的开发笔记，同时也写以技术思维写一些个人技术及生活的小笔记。</div>
+</div>
+
+
+
+
+<div id="sideBarTop">
+<h3 class="catListTitle">乔硕</h3>
+<div class="sideBarbox">
+<a href="https://bbme.qsis.cn/qiaoshuo.html" title="乔硕：跨界型全能人才"><img src="https://swbj.qsis.cn/upload/images/qiaoshuo.jpg "></a>
+</div>
+</div>
+
+</div>
+
+    </div>
+</div>
+
+
+<div class="clear"></div>
+
+  <div id=footer><a href=login.php>京ICP备10003015-3</a> Powerby <a href="https://download.qsis.cn" target="_blank">Qsis.G3M CMS系统</a> Designed and Diveloped By <a href="https://swbj.qsis.cn/qiaoshuo/" target="_blank">isher.Qiao</a></div>
+      <div><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?952e13a89d5fee015b5e6508cd6971cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+</div>
+<script>
+function toggleSidebar() {
+    const sideBar = document.getElementById('sideBar');
+    const btn = document.querySelector('.sidebar-toggle');
+    
+    sideBar.classList.toggle('collapsed');
+
+    if (sideBar.classList.contains('collapsed')) {
+        btn.textContent = '≡ 展开';
+    } else {
+        btn.textContent = '≡ 折叠';
+    }
+}
+</script>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
+
+<script>
+// 加载搜索索引
+let searchIndex = [];
+
+async function loadSearchIndex() {
+  try {
+    const res = await fetch('/search-index.json');
+    searchIndex = await res.json();
+    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
+  } catch (err) {
+    console.error('搜索索引加载失败', err);
+  }
+}
+
+// 执行搜索
+function doSearch(keyword) {
+  const resultBox = document.getElementById('search-result');
+  resultBox.innerHTML = '';
+
+  if (!keyword.trim()) {
+    return;
+  }
+
+  const kw = keyword.toLowerCase();
+  const matched = searchIndex.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+    return title.includes(kw) || content.includes(kw);
+  });
+
+  if (matched.length === 0) {
+    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
+    return;
+  }
+
+  let html = '';
+  matched.forEach(item => {
+    html += `
+<div class="search-item">
+  <a href="${item.url}" target="_blank">${item.title}</a>
+  <div class="desc">${item.content.substring(0, 120)}...</div>
+</div>
+    `;
+  });
+
+  resultBox.innerHTML = html;
+}
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadSearchIndex();
+
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => {
+    doSearch(e.target.value);
+  });
+});
+</script>
+<script>
+$(function(){
+    $('.qrcode').each(function(){
+        $(this).qrcode({
+            text: $(this).data('url'),
+            width: 100,
+            height: 100,
+            draw: false   // 👈 就是加这一句，关闭文字显示
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
+

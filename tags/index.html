@@ -1,0 +1,4157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta property="og:image" content="https://bbme.qsis.cn/logo.png">
+<link rel="image_src" href="https://bbme.qsis.cn/logo.png">
+
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="alternate" type="application/rss+xml" href="https://bbme.qsis.cn/rss.xml" title="深悟笔记 RSS 订阅">
+<meta name="thumbnail" content="https://bbme.qsis.cn/upload/images/tech.png">
+<meta name="description" centent="bbme.qsis.cn是专注 Qsis 系列 CMS 系统开发的乔硕个人技术博客，记录 Qsis.G3M 等版本迭代、功能开发与技术问题解决，同时分享IT技术与生活小思考的日常内容。">
+
+
+
+
+
+
+    <title>深悟笔记 | 卑鄙的我</title>
+
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <link rel="icon" type="image/png" href="https://bbme.qsis.cn/upload/images/tech.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="site" content="https://bbme.qsis.cn">
+    <meta property="og:image" content="/upload/images/tech.png">
+    <link rel="stylesheet" href="https://me.qsis.cn:88/static_site/files/theme/cnblog/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="深悟笔记 | 卑鄙的我"/>
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深悟笔记 | 卑鄙的我">
+    <script>var canonicalUrl = window.location.href.replace(/me.qsis.cn:88/,'bbme.qsis.cn');var link = document.createElement('link');link.rel = 'canonical';link.href = canonicalUrl;document.head.appendChild(link);</script>
+<style>
+.post-thumb {
+  width: 100px;
+  height: 100px;
+}
+.post-thumb canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<body>
+	<div id="home"> 
+    <div id="header"> 
+        <div id="blogTitle"> 
+            <!--done--> 
+            <img src="https://bbme.qsis.cn/files/theme/cnblog/images/bg-top.png" alt="qsis cms header pic">
+            <div class="title">
+<a href="https://bbme.qsis.cn" class="logo">深悟笔记 | 卑鄙的我</a>
+            </div> 
+        </div>
+    </div>
+    <div id="navigator"> 
+        <ul id="navList"> 
+            <div class="menu-main"><ul><li><a href="https://bbme.qsis.cn/" target="_self">首页</a></li><li><a href="https://bbme.qsis.cn/tag/技术文章/" target="_self">IT技术</a></li><li><a href="https://bbme.qsis.cn/tag/Qsis/" target="_self">Qsis</a></li><li><a href="https://bbme.qsis.cn/tag/想法/" target="_self">想法</a></li><li><a href="https://bbme.qsis.cn/tag/日常/" target="_self">日常</a></li><li><a href="https://bbme.qsis.cn/video.html" target="_blank">电影</a></li><li><a href="https://bbme.qsis.cn/qiaoshuo.html" target="_blank">关于</a></li><li><a href="https://jx.nnxv.cn/zbo/b.php" target="_blank">直播</a></li><li><a href="https://jx.nnxv.cn/?type=movie" target="_blank">综合查询</a></li></ul></div></div>
+        </ul> 
+    </div>
+
+
+
+<div class="card">
+    <!-- 页面标题 -->
+    <h1>所有标签</h1>
+
+    <!-- 标签云核心区域 -->
+            <div class="tag-cloud" style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 20px 0;
+        ">
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/winrar/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>winrar</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/日常/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>日常</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">6</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QsisG开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QsisG开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">10</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_G_N/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.G.N</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">29</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">4</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_GN/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.GN</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/CMS/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>CMS</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/液晶面板区别区分优缺点/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>液晶面板区别区分优缺点</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/CMS系统/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>CMS系统</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_G3M开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.G3M开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">3</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/想法/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>想法</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">22</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_WB/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.WB</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">18</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/CMS开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>CMS开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_G3M/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.G3M</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/spotify/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>spotify</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/下载/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>下载</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/星际战甲/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>星际战甲</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/warframe/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>warframe</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/铠甲故事/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>铠甲故事</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/winpe/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>winpe</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/制作winpe/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>制作winpe</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/tvbox/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>tvbox</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/tv源/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>tv源</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/tvbox源/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>tvbox源</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/看电视/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>看电视</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_GN开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.GN开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QuickGN/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QuickGN</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_WB开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.WB开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">16</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/MD5/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>MD5</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/bcrypt/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>bcrypt</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/密码加密/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>密码加密</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_G/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.G</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">8</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/新的想法/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>新的想法</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/技术/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>技术</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QA/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QA</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/背景视频/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>背景视频</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/ChatGpt收集/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>ChatGpt收集</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/机动战士高达/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>机动战士高达</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/时间线/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>时间线</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/剧情/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>剧情</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/电视盒子/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>电视盒子</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/刷机/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>刷机</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">4</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/电信盒子/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>电信盒子</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/移动盒子/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>移动盒子</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/破解/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>破解</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">4</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/机顶盒/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>机顶盒</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">5</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/mac/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>mac</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/hyper_v/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>hyper-v</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/虚拟机/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>虚拟机</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/虚拟化/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>虚拟化</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/linux/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>linux</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/ubunut/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>ubunut</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/multipass/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>multipass</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/管理工具/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>管理工具</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/物业/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>物业</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/物业费/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>物业费</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/资金/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>资金</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/食品/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>食品</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/酱油/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>酱油</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/语录/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>语录</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">3</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/生活/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>生活</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">34</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/E900V21E/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>E900V21E</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/创维/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>创维</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/北京电信/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>北京电信</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/影响/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>影响</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/正能量/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>正能量</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/绿化/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>绿化</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/宠物草/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>宠物草</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/中海物业/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>中海物业</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/生活日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>生活日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/E900V21/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>E900V21</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/E900v21D/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>E900v21D</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/rec模式/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>rec模式</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/砖机/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>砖机</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/php/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>php</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/explorer/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>explorer</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/技术文章/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>技术文章</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">8</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Timezone/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Timezone</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/zoneinfo/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>zoneinfo</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/openwrt源/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>openwrt源</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/arm_cortex_a9/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>arm_cortex-a9</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Lede源/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Lede源</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/wget镜像源/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>wget镜像源</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/openwrt/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>openwrt</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">3</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/nginx/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>nginx</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/php_fpm/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>php-fpm</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/uhttpd/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>uhttpd</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/uwsgi/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>uwsgi</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/openwrt装nginx/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>openwrt装nginx</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/hexo/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>hexo</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/部署/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>部署</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/adobe/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>adobe</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Adobe/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Adobe</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Acrobat/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Acrobat</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Pro/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Pro</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/DC/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>DC</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/更新/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>更新</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/登录/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>登录</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/无法激活/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>无法激活</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/解决/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>解决</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_WA/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.WA</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Qsis_WA开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Qsis.WA开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/doc88/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>doc88</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/道客巴巴/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>道客巴巴</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/文章下载/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>文章下载</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/文档下载/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>文档下载</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Covid19/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Covid19</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/新冠疫苗/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>新冠疫苗</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/区别/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>区别</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/天下第一楼_话剧/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>天下第一楼，话剧</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QsisB开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QsisB开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/m3u8/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>m3u8</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/跳转/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>跳转</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/东四牌楼东/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>东四牌楼东</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/ipv6/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>ipv6</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/After_Forever/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>After Forever</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/歌曲/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>歌曲</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">6</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/music/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>music</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">6</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/Discord/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>Discord</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/全网VIP视频/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>全网VIP视频</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/vip视频网站/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>vip视频网站</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/双层网络_ipv6_设置/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>双层网络、ipv6 设置</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QsisWA/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QsisWA</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QsisWA开发日志/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QsisWA开发日志</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/李沁/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>李沁</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/中海集团/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>中海集团</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/数字备忘录/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>数字备忘录</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/备忘录/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>备忘录</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">2</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/美食/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>美食</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/探查/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>探查</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/MV/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>MV</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/北京小学/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>北京小学</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/北京小学亦庄学校/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>北京小学亦庄学校</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/一次性医用口罩/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>一次性医用口罩</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/灭菌型口罩/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>灭菌型口罩</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/抑菌型口罩/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>抑菌型口罩</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/非灭菌型口罩/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>非灭菌型口罩</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/娱乐/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>娱乐</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/epic/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>epic</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/hue/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>hue</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/ffmpeg/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>ffmpeg</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/mp4/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>mp4</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/it/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>it</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">3</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/乐趣/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>乐趣</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/华为/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>华为</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/P30pro/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>P30pro</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/手机/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>手机</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/眩晕/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>眩晕</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/自强/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>自强</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/老婆/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>老婆</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/华为手机/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>华为手机</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/拍照/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>拍照</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/QuickB/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>QuickB</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/实行建议/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>实行建议</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/CSDN/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>CSDN</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">3</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/搜索引擎提交入口/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>搜索引擎提交入口</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/法律/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>法律</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/兴趣/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>兴趣</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/判断感冒的方法/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>判断感冒的方法</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/买东西的技巧/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>买东西的技巧</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/红歌/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>红歌</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/win10激活/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>win10激活</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/office激活/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>office激活</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/程序/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>程序</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/哲学/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>哲学</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">4</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/感悟/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>感悟</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/想念/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>想念</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/星座/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>星座</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/生活_语录_想法_其他/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>生活、语录、想法、其他</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">16</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/其他/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>其他</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                                            <!-- 标签样式：复用现有CSS变量，胶囊式设计 -->
+                <a href="https://bbme.qsis.cn/tag/undefined/index.html" style="
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 8px 16px;
+                    background: var(--bg);
+                    border: 1px solid #e5e7eb;
+                    border-radius: 24px;
+                    font-size: 0.95rem;
+                    color: var(--text);
+                    text-decoration: none;
+                    transition: all 0.2s ease;
+                ">
+                    <span>undefined</span>
+                    <span style="
+                        margin-left: 6px;
+                        padding: 2px 8px;
+                        background: var(--primary);
+                        color: white;
+                        font-size: 0.8rem;
+                        border-radius: 12px;
+                    ">1</span>
+                </a>
+                    </div>
+
+        <!-- 标签统计信息 -->
+        <div style="
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #6b7280;
+        ">
+            共 172 个标签，包含 191 篇文章
+        </div>
+    </div>
+
+<div class="clear"></div>
+
+  <div id=footer><a href=login.php>京ICP备10003015-3</a> Powerby <a href="https://download.qsis.cn" target="_blank">Qsis.G3M CMS系统</a> Designed and Diveloped By <a href="https://swbj.qsis.cn/qiaoshuo/" target="_blank">isher.Qiao</a></div>
+      <div><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?952e13a89d5fee015b5e6508cd6971cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+</div>
+<script>
+function toggleSidebar() {
+    const sideBar = document.getElementById('sideBar');
+    const btn = document.querySelector('.sidebar-toggle');
+    
+    sideBar.classList.toggle('collapsed');
+
+    if (sideBar.classList.contains('collapsed')) {
+        btn.textContent = '≡ 展开';
+    } else {
+        btn.textContent = '≡ 折叠';
+    }
+}
+</script>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
+
+<script>
+// 加载搜索索引
+let searchIndex = [];
+
+async function loadSearchIndex() {
+  try {
+    const res = await fetch('/search-index.json');
+    searchIndex = await res.json();
+    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
+  } catch (err) {
+    console.error('搜索索引加载失败', err);
+  }
+}
+
+// 执行搜索
+function doSearch(keyword) {
+  const resultBox = document.getElementById('search-result');
+  resultBox.innerHTML = '';
+
+  if (!keyword.trim()) {
+    return;
+  }
+
+  const kw = keyword.toLowerCase();
+  const matched = searchIndex.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+    return title.includes(kw) || content.includes(kw);
+  });
+
+  if (matched.length === 0) {
+    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
+    return;
+  }
+
+  let html = '';
+  matched.forEach(item => {
+    html += `
+<div class="search-item">
+  <a href="${item.url}" target="_blank">${item.title}</a>
+  <div class="desc">${item.content.substring(0, 120)}...</div>
+</div>
+    `;
+  });
+
+  resultBox.innerHTML = html;
+}
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadSearchIndex();
+
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => {
+    doSearch(e.target.value);
+  });
+});
+</script>
+<script>
+$(function(){
+    $('.qrcode').each(function(){
+        $(this).qrcode({
+            text: $(this).data('url'),
+            width: 100,
+            height: 100,
+            draw: false   // 👈 就是加这一句，关闭文字显示
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
+

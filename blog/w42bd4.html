@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta property="og:image" content="https://bbme.qsis.cn/logo.png">
+<link rel="image_src" href="https://bbme.qsis.cn/logo.png">
+
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <link rel="alternate" type="application/rss+xml" href="https://bbme.qsis.cn/rss.xml" title="深悟笔记 RSS 订阅">
+<meta name="thumbnail" content="https://bbme.qsis.cn/upload/images/tech.png">
+<meta name="description" centent="Multipass是一种简单的虚拟机工具。它不仅使启用虚拟机变得快速简易，还使管理那些虚拟机变得异常简单，因此可以立即开始针对云、边缘、物联网或任何一种类型的技...">
+
+
+
+
+
+
+    <title>轻量级虚拟机部署管理工具-Multipass - </title>
+
+
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <link rel="icon" type="image/png" href="https://bbme.qsis.cn/upload/images/tech.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta name="site" content="https://bbme.qsis.cn">
+    <meta property="og:image" content="/upload/images/tech.png">
+    <link rel="stylesheet" href="https://me.qsis.cn:88/static_site/files/theme/cnblog/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="深悟笔记 | 卑鄙的我"/>
+
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="深悟笔记 | 卑鄙的我">
+    <script>var canonicalUrl = window.location.href.replace(/me.qsis.cn:88/,'bbme.qsis.cn');var link = document.createElement('link');link.rel = 'canonical';link.href = canonicalUrl;document.head.appendChild(link);</script>
+<style>
+.post-thumb {
+  width: 100px;
+  height: 100px;
+}
+.post-thumb canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+</style>
+<body>
+	<div id="home"> 
+    <div id="header"> 
+        <div id="blogTitle"> 
+            <!--done--> 
+            <img src="https://bbme.qsis.cn/files/theme/cnblog/images/bg-top.png" alt="qsis cms header pic">
+            <div class="title">
+<a href="https://bbme.qsis.cn" class="logo">深悟笔记 | 卑鄙的我</a>
+            </div> 
+        </div>
+    </div>
+    <div id="navigator"> 
+        <ul id="navList"> 
+            <div class="menu-main"><ul><li><a href="https://bbme.qsis.cn/" target="_self">首页</a></li><li><a href="https://bbme.qsis.cn/tag/技术文章/" target="_self">IT技术</a></li><li><a href="https://bbme.qsis.cn/tag/Qsis/" target="_self">Qsis</a></li><li><a href="https://bbme.qsis.cn/tag/想法/" target="_self">想法</a></li><li><a href="https://bbme.qsis.cn/tag/日常/" target="_self">日常</a></li><li><a href="https://bbme.qsis.cn/video.html" target="_blank">电影</a></li><li><a href="https://bbme.qsis.cn/qiaoshuo.html" target="_blank">关于</a></li><li><a href="https://jx.nnxv.cn/zbo/b.php" target="_blank">直播</a></li><li><a href="https://jx.nnxv.cn/?type=movie" target="_blank">综合查询</a></li></ul></div></div>
+        </ul> 
+    </div>
+
+
+
+<div id="main"> 
+    <div id="container"> 
+                    <div id="topics"> 
+                        <div class="post"> 
+                            <h1 class="postTitle">轻量级虚拟机部署管理工具-Multipass</h1>                            
+                            <div class="postBody"> 
+                                <!-- 文章作者、发布时间 -->
+                                <div class="meta" style="margin-bottom: 30px;">
+                                                                    </div>
+
+                                <!-- 文章正文内容 -->
+                                <div id="article-content">Multipass是一种简单的虚拟机工具。它不仅使启用虚拟机变得快速简易，还使管理那些虚拟机变得异常简单，因此可以立即开始针对云、边缘、物联网或任何一种类型的技术进行开发。实际上，Multipass包含一个系统任务栏工具，你只要点击一下就可以启动和停止虚拟机，甚至进入虚拟机的外壳。支持Linux、Windows系统等。<h2 style="box-sizing: border-box; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif; font-weight: 400; line-height: 1.4; color: rgb(25, 181, 254); margin: 18px 0px; font-size: 18px; padding: 10px 0px; border-bottom: 1px solid rgb(234, 234, 234);">一、Multipass介绍</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">Multipass是一种简单的虚拟机工具。它不仅使启用虚拟机变得快速简易，还使管理那些虚拟机变得异常简单，因此可以立即开始针对云、边缘、物联网或任何一种类型的技术进行开发。实际上，Multipass包含一个系统任务栏工具，你只要点击一下就可以启动和停止虚拟机，甚至进入虚拟机的外壳。支持Linux、Windows系统等。<br /><br /></p><h2 style="box-sizing: border-box; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif; font-weight: 400; line-height: 1.4; color: rgb(25, 181, 254); margin: 18px 0px; font-size: 18px; padding: 10px 0px; border-bottom: 1px solid rgb(234, 234, 234);">二、Multipass环境搭建</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">1.Ubuntu系统搭建</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo apt update</span><br style="box-sizing: border-box;" /></li><li class="L1" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; background: none; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo apt install snapd           </span><span class="com" style="box-sizing: border-box; color: rgb(147, 161, 161);">#安装snapd</span><br style="box-sizing: border-box;" /></li><li class="L2" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo snap install multipass      </span><span class="com" style="box-sizing: border-box; color: rgb(147, 161, 161);">#安装multipass</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">2.Centos系统搭建</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo yum install epel</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">release</span><br style="box-sizing: border-box;" /></li><li class="L1" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; background: none; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo yum install snapd</span><br style="box-sizing: border-box;" /></li><li class="L2" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo systemctl enable </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">--</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">now snapd</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">.</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">socket</span><br style="box-sizing: border-box;" /></li><li class="L3" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; background: none; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo ln </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">s </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="kwd" style="box-sizing: border-box; color: rgb(249, 38, 89);">var</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lib</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">snapd</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">snap </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">snap</span><br style="box-sizing: border-box;" /></li><li class="L4" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">sudo snap install multipass</span></li></ol></pre></div><h2 style="box-sizing: border-box; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif; font-weight: 400; line-height: 1.4; color: rgb(25, 181, 254); margin: 18px 0px; font-size: 18px; padding: 10px 0px; border-bottom: 1px solid rgb(234, 234, 234);">三、Multipass常用命令</h2><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">1.查找镜像</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass find</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">2.创建虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass launch -n 虚拟机名称</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">-n, --name: 名称<br style="box-sizing: border-box;" />-c, --cpus: cpu核心数, 默认: 1<br style="box-sizing: border-box;" />-m, --mem: 内存大小, 默认: 1G<br style="box-sizing: border-box;" />-d, --disk: 硬盘大小, 默认: 5G</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass launch </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">n ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">c </span><span class="lit" style="box-sizing: border-box; color: rgb(174, 129, 255);">4</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">m </span><span class="lit" style="box-sizing: border-box; color: rgb(174, 129, 255);">4G</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">d </span><span class="lit" style="box-sizing: border-box; color: rgb(174, 129, 255);">40G</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">3.进入虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass shell 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass shell ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">4.直接使用虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass exec 虚拟机名称&nbsp; --命令</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass </span><span class="kwd" style="box-sizing: border-box; color: rgb(249, 38, 89);">exec</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">--</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> ls</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">5.查看虚拟机列表</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass ls</span><br style="box-sizing: border-box;" /></li><li class="L1" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; background: none; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass list</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">6.查看虚拟机信息</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass info 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass info ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">7.重启虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass restart 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass restart ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">8.删除虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass delete 虚拟机名称</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">--purge&nbsp; 彻底删除</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass </span><span class="kwd" style="box-sizing: border-box; color: rgb(249, 38, 89);">delete</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span><br style="box-sizing: border-box;" /></li><li class="L1" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; background: none; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass </span><span class="kwd" style="box-sizing: border-box; color: rgb(249, 38, 89);">delete</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);"> </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">--</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">purge ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">彻底删除</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">9.恢复删除虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass recover 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass recover ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">10.启动虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass start 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass start ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">11.暂停虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass stop 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass stop ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">12.宿主机挂载虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass mount 宿主机目录 虚拟机名称：虚拟机目录</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass mount </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">mnt ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">python</span></li></ol></pre><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass mount </span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">mnt ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">python</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">:/</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">mnt</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">13.宿主机卸载虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass unmount 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass unmount ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">14.挂起虚拟机</p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">语法：multipass suspend 虚拟机名称</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass suspend ubuntu</span><span class="pun" style="box-sizing: border-box; color: rgb(248, 248, 242);">-</span><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">lts</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">15.获取版本信息</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass version</span></li></ol></pre></div><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 25px; color: rgb(61, 70, 77); overflow-wrap: break-word; line-height: 1.8; font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;">16.帮助</p><div style="box-sizing: border-box; color: rgb(61, 70, 77); font-family: suxingme, Helvetica, Arial, &quot;Open Sans&quot;, Arial, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Source Han Sans CN&quot;, Roboto, &quot;Microsoft Yahei&quot;, sans-serif;"><pre class="prettyprint linenums prettyprinted" style="box-sizing: border-box; overflow: auto; font-family: Lustria, serif; font-size: 1em; border-radius: 0px; background-color: rgb(57, 56, 46); border: none rgb(232, 232, 232); padding: 12px 18px; white-space: pre-wrap; overflow-wrap: break-word; color: rgb(86, 101, 115); box-shadow: rgb(70, 69, 65) 40px 0px 0px inset, rgb(70, 71, 65) 41px 0px 0px inset;"><ol class="linenums" style="box-sizing: border-box; font-family: &quot;courier new&quot;, monospace; margin: 0px 0px 0px 30px; list-style-position: initial; list-style-image: initial; padding: 0px;"><li class="L0" style="box-sizing: border-box; list-style: decimal; margin: 0px; padding: 0px 0px 0px 12px; color: rgb(190, 190, 197); line-height: 20px; overflow-wrap: break-word;"><span class="pln" style="box-sizing: border-box; color: rgb(102, 217, 239);">multipass help</span></li></ol></pre></div></div> 
+                            </div> 
+
+                            <div id="MySignature"></div> 
+                            <div class="clear"></div> 
+                            
+                            <div id="blog_post_info_block"> 
+                                <div id="blog_post_info"></div> 
+                                <div class="clear"></div> 
+                                <div id="post_next_prev"></div> 
+                            </div> 
+                                                    <!-- 文章标签 -->
+                        <div class="postDesc">
+                            posted @ 
+                            <span id="post-date"> 标签：<a href="https://bbme.qsis.cn/tag/虚拟化/index.html">虚拟化</a> <a href="https://bbme.qsis.cn/tag/linux/index.html">linux</a> <a href="https://bbme.qsis.cn/tag/ubunut/index.html">ubunut</a> <a href="https://bbme.qsis.cn/tag/multipass/index.html">multipass</a> <a href="https://bbme.qsis.cn/tag/虚拟机/index.html">虚拟机</a> <a href="https://bbme.qsis.cn/tag/管理工具/index.html">管理工具</a></span>
+                        </div> 
+                        <div class="postDesc">
+                            <span id="post-date">2023-02-27</span>
+                        </div> 
+                        
+                        <!-- 返回按钮：首页/目录 -->
+                                                    <a href="https://bbme.qsis.cn/" class="btn">返回首页</a>
+                                                </div>
+
+
+
+                    </div>
+            </div>
+        
+    <div id="sideBar">
+
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">文章搜索</h3>
+  <div class="sideBarbox"> 
+  <input type="text" id="search-input" placeholder="搜索文章…" autocomplete="off">
+  <div id="search-result"></div>
+</div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">RSS阅读</h3>
+  <div class="sideBarbox"> 
+<div style="font-size:14px;">   <a href="https://swbj.qsis.cn/rss.xml" target="_blank" style="text-decoration:none; color:#333;">     <img src="https://www.w3schools.com/xml/pic_rss.gif"           alt="RSS 订阅"           style="width:16px; height:16px; vertical-align:middle; margin-right:6px;">     订阅 RSS / Feed   </a> </div></div>
+</div>
+
+
+<div id="sidebar-card">
+<h3 class="catListTitle">手机扫码看本文</h3>
+<div class="sideBarbox">
+<div class="qrcode" data-url="<br />
+<b>Warning</b>:  Undefined variable $post_url in <b>/www/bbme/ccc/files/static_theme/cnblog/side.php</b> on line <b>28</b><br />
+"></div>
+您可以通过手机语音助手指令“骚猫二维码”，进行扫描并打开浏览器进行阅读，也可以通过微信扫一扫阅读文章。
+</div>
+</div>
+ <div id="sideBarMain">
+<h3 class="catListTitle">摘要</h3>
+    
+    
+            <div class="sideBarbox">
+            Multipass是一种简单的虚拟机工具。它不仅使启用虚拟机变得快速简易，还使管理那些虚拟机变得异常简单，因此可以立即开始针对云、边缘、物联网或任何一种类型的技术进行开发。实际上，Multipass包含一个系统任务栏工具，你只要点击一下就可以启动和停止虚拟机，甚至进入虚拟机的外壳。支持Linux、Windows系统等。一、Multipass介绍Multipass是一种简单的虚拟机工具。它不仅使启用...        </div>
+        <div class="clear"></div>
+
+  </div>
+
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">链接</h3>
+
+</div>  
+<div class="sideBarbox">
+<ul><li><a href="https://bbme.qsis.cn/contact.html" target="_self">联系</a></li><li><a href="https://bbme.qsis.cn/liuyan.html" target="_self">留言</a></li><li><a href="https://i.qsis.cn:88/music/" target="_self">音乐节拍</a></li><li><a href="https://i.qsis.cn:88/musiccy/" target="_self">初音未来</a></li><li><a href="https://bbme.qsis.cn/tools.html" target="_blank">工具链接</a></li><li><a href="https://bbme.qsis.cn/login/" target="_blank">登录</a></li></ul></div>
+
+
+
+<div id="sideBarMain">
+<h3 class="catListTitle">关于</h3>
+<div class="sideBarbox">
+以礼立界，学以致用，友以逆正，谋以利成。
+这里是QSIS.CMS开的开发笔记，同时也写以技术思维写一些个人技术及生活的小笔记。</div>
+</div>
+
+
+
+
+<div id="sideBarTop">
+<h3 class="catListTitle">乔硕</h3>
+<div class="sideBarbox">
+<a href="https://bbme.qsis.cn/qiaoshuo.html" title="乔硕：跨界型全能人才"><img src="https://swbj.qsis.cn/upload/images/qiaoshuo.jpg "></a>
+</div>
+</div>
+
+</div>
+
+    </div>
+</div>
+
+
+<div class="clear"></div>
+
+  <div id=footer><a href=login.php>京ICP备10003015-3</a> Powerby <a href="https://download.qsis.cn" target="_blank">Qsis.G3M CMS系统</a> Designed and Diveloped By <a href="https://swbj.qsis.cn/qiaoshuo/" target="_blank">isher.Qiao</a></div>
+      <div><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?952e13a89d5fee015b5e6508cd6971cf";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></div>
+</div>
+<script>
+function toggleSidebar() {
+    const sideBar = document.getElementById('sideBar');
+    const btn = document.querySelector('.sidebar-toggle');
+    
+    sideBar.classList.toggle('collapsed');
+
+    if (sideBar.classList.contains('collapsed')) {
+        btn.textContent = '≡ 展开';
+    } else {
+        btn.textContent = '≡ 折叠';
+    }
+}
+</script>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.qrcode@1.0.3/jquery.qrcode.min.js"></script>
+
+<script>
+// 加载搜索索引
+let searchIndex = [];
+
+async function loadSearchIndex() {
+  try {
+    const res = await fetch('/search-index.json');
+    searchIndex = await res.json();
+    console.log(`已加载 ${searchIndex.length} 篇文章用于搜索`);
+  } catch (err) {
+    console.error('搜索索引加载失败', err);
+  }
+}
+
+// 执行搜索
+function doSearch(keyword) {
+  const resultBox = document.getElementById('search-result');
+  resultBox.innerHTML = '';
+
+  if (!keyword.trim()) {
+    return;
+  }
+
+  const kw = keyword.toLowerCase();
+  const matched = searchIndex.filter(item => {
+    const title = (item.title || '').toLowerCase();
+    const content = (item.content || '').toLowerCase();
+    return title.includes(kw) || content.includes(kw);
+  });
+
+  if (matched.length === 0) {
+    resultBox.innerHTML = '<div class="no-result">没有找到相关文章</div>';
+    return;
+  }
+
+  let html = '';
+  matched.forEach(item => {
+    html += `
+<div class="search-item">
+  <a href="${item.url}" target="_blank">${item.title}</a>
+  <div class="desc">${item.content.substring(0, 120)}...</div>
+</div>
+    `;
+  });
+
+  resultBox.innerHTML = html;
+}
+
+// 初始化
+document.addEventListener('DOMContentLoaded', () => {
+  loadSearchIndex();
+
+  const input = document.getElementById('search-input');
+  input.addEventListener('input', e => {
+    doSearch(e.target.value);
+  });
+});
+</script>
+<script>
+$(function(){
+    $('.qrcode').each(function(){
+        $(this).qrcode({
+            text: $(this).data('url'),
+            width: 100,
+            height: 100,
+            draw: false   // 👈 就是加这一句，关闭文字显示
+        });
+    });
+});
+</script>
+
+
+</body>
+</html>
+
