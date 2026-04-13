@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>深悟笔记 | 卑鄙的我</title>
+<link>https://bbme.qsis.cn/</link>
+<description>bbme.qsis.cn是专注 Qsis 系列 CMS 系统开发的乔硕个人技术博客，记录 Qsis.G3M 等版本迭代、功能开发与技术问题解决，同时分享IT技术与生活小思考的日常内容。</description>
+<language>zh-cn</language>
+<lastBuildDate>Mon, 13 Apr 2026 09:20:22 +0800</lastBuildDate>
+<atom:link href="https://bbme.qsis.cn/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>winrar注册码激活码</title>
+<link>https://bbme.qsis.cn/blog/3dx50k.html</link>
+<guid>https://bbme.qsis.cn/blog/3dx50k.html</guid>
+<pubDate>Sat, 11 Apr 2026 00:00:00 +0800</pubDate>
+<description><p>今天偷用老丈人的电脑，发现电脑里满是流氓软件，例如2345678，3某0等乱七八糟软件，而且win10的系统还没激活，老头子你可真行，那我来吧。</p><p>不过搞winrar的时候，为了找key，费了点时间，还不错从知乎和csdn找到了。顺便随手记录一下。</p><p>将rarreg.key拷贝到rar目录</p><p></p><p><strong><a href="https://bbme.qsis.cn/blog/3dx50k.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>CMS:QsisCMS增加全站静态化方案和同步github功能</title>
+<link>https://bbme.qsis.cn/blog/e26dtr.html</link>
+<guid>https://bbme.qsis.cn/blog/e26dtr.html</guid>
+<pubDate>Wed, 01 Apr 2026 00:00:00 +0800</pubDate>
+<description><p>Qsis CMS 正式支持静态化功能，全新的静态模板、全新的样式、全新的全站生成功能，同时支持Github同步快速同步。</p><p>以前我们只需要php空间就可以运行，现在我们可以依靠本地php环境，而公网只需要html基础环境就可以运行，更安全，更高速的Qsis。</p><p>最终完成所有的功能，已经到了4月10号，顺带着...</p><p><strong><a href="https://bbme.qsis.cn/blog/e26dtr.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>CMS新功能之添加github上传功能，像hugo看齐。</title>
+<link>https://bbme.qsis.cn/blog/whhpcl.html</link>
+<guid>https://bbme.qsis.cn/blog/whhpcl.html</guid>
+<pubDate>Sun, 15 Mar 2026 00:00:00 +0800</pubDate>
+<description></description>
+</item>
+<item>
+<title>显示器面板区别</title>
+<link>https://bbme.qsis.cn/blog/cojb6j.html</link>
+<guid>https://bbme.qsis.cn/blog/cojb6j.html</guid>
+<pubDate>Mon, 09 Mar 2026 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/cojb6j.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>251230修改严重bug</title>
+<link>https://bbme.qsis.cn/blog/nj0lrp.html</link>
+<guid>https://bbme.qsis.cn/blog/nj0lrp.html</guid>
+<pubDate>Wed, 31 Dec 2025 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/nj0lrp.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>我想我的栏目里应该建立一个医学板块了</title>
+<link>https://bbme.qsis.cn/blog/axtnzy.html</link>
+<guid>https://bbme.qsis.cn/blog/axtnzy.html</guid>
+<pubDate>Tue, 09 Dec 2025 00:00:00 +0800</pubDate>
+<description></description>
+</item>
+<item>
+<title>夫人看病</title>
+<link>https://bbme.qsis.cn/blog/etpi15.html</link>
+<guid>https://bbme.qsis.cn/blog/etpi15.html</guid>
+<pubDate>Wed, 05 Nov 2025 00:00:00 +0800</pubDate>
+<description></description>
+</item>
+<item>
+<title>2025年4月开发总结Qsis.G3M开发日志</title>
+<link>https://bbme.qsis.cn/blog/g215rz.html</link>
+<guid>https://bbme.qsis.cn/blog/g215rz.html</guid>
+<pubDate>Wed, 30 Apr 2025 00:00:00 +0800</pubDate>
+<description><p>用了不到10天，添加和修改了一些内容，</p><p>添加了邮件设置和邮件发送功能，利用第三方smtp服务。</p><p>添加了创建用户功能、用户权限设置功能。</p><p>添加了开发者模式，添加了邮件功能的logs开启和关闭功能。</p><p>同时修正了系统备份、下载地址和下载链接功能，下载后发送邮件到制定邮箱功能。</p><p>修正了登录和验证函数，采用同一个登录地...</p><p><strong><a href="https://bbme.qsis.cn/blog/g215rz.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20250420版本更名为Qsis.G3M CMS系统</title>
+<link>https://bbme.qsis.cn/blog/t3fgyq.html</link>
+<guid>https://bbme.qsis.cn/blog/t3fgyq.html</guid>
+<pubDate>Sun, 20 Apr 2025 00:00:00 +0800</pubDate>
+<description><p>近期，完成了很早就规划的多用户和多用户组的支持，目前Qsis CMS已经支持了多用户使用、多用户级别和多用户管理的模式。2025年4月18-20日完成的多用户功能自此，多用户模式、多语言模式和多模型系统，即3M模式形成。</p><p>Qsis CMS系统从Qsis.G.N版本，变更为Qsis.G3M，即表示Qsi...</p><p><strong><a href="https://bbme.qsis.cn/blog/t3fgyq.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Spotify音乐下载指南-不要被误导而损失惨重</title>
+<link>https://bbme.qsis.cn/blog/qmfo1l.html</link>
+<guid>https://bbme.qsis.cn/blog/qmfo1l.html</guid>
+<pubDate>Wed, 16 Apr 2025 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/qmfo1l.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>warframe星际战甲-各战甲故事</title>
+<link>https://bbme.qsis.cn/blog/2tznwd.html</link>
+<guid>https://bbme.qsis.cn/blog/2tznwd.html</guid>
+<pubDate>Sun, 13 Apr 2025 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/2tznwd.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>自己制作一个纯净的WINPE系统</title>
+<link>https://bbme.qsis.cn/blog/vt4fgf.html</link>
+<guid>https://bbme.qsis.cn/blog/vt4fgf.html</guid>
+<pubDate>Mon, 10 Mar 2025 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/vt4fgf.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Tvbox源地址</title>
+<link>https://bbme.qsis.cn/blog/j5xvjo.html</link>
+<guid>https://bbme.qsis.cn/blog/j5xvjo.html</guid>
+<pubDate>Tue, 01 Oct 2024 00:00:00 +0800</pubDate>
+<description><p>https://qsis.cn/tvbox/1.json</p><p></p><p>最新接口配置地址大全2024</p><p><strong><a href="https://bbme.qsis.cn/blog/j5xvjo.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240927更新了很多内容</title>
+<link>https://bbme.qsis.cn/blog/goolkq.html</link>
+<guid>https://bbme.qsis.cn/blog/goolkq.html</guid>
+<pubDate>Fri, 27 Sep 2024 00:00:00 +0800</pubDate>
+<description><p>自从8月升级python，导致服务器整体瘫痪，外加身体不适，一直搁置，9月中旬，重新部署了ubuntu，并且采用了最小安装，以避免更多的版本冲突，而php从7.4升级到了更为严格的8.3版本，更新后程序出现了很多兼容性问题，主要是之前我写的程序很不规范，包括短标缩写和一些其他缩写，而7.4版本容错比...</p><p><strong><a href="https://bbme.qsis.cn/blog/goolkq.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>又说PHP的密码加密</title>
+<link>https://bbme.qsis.cn/blog/pxyoa3.html</link>
+<guid>https://bbme.qsis.cn/blog/pxyoa3.html</guid>
+<pubDate>Thu, 18 Jul 2024 00:00:00 +0800</pubDate>
+<description><p>php的密码加密依然是需要谨慎地，虽然我依然喜欢采用MD5，因为MD5的加盐可以随意定制，但是确实有越来越多的字典，可是盐可是随机的，绝对可以是“Password+我爱中华A41@4163”，而我们采用的盐虽然是随机的，但是是可见的，这个也是比较危险的问题，当时考虑的是盐可以自定，而实际上，盐可见，...</p><p><strong><a href="https://bbme.qsis.cn/blog/pxyoa3.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240715 更新了服务器验证的功能</title>
+<link>https://bbme.qsis.cn/blog/tidhrl.html</link>
+<guid>https://bbme.qsis.cn/blog/tidhrl.html</guid>
+<pubDate>Tue, 16 Jul 2024 00:00:00 +0800</pubDate>
+<description><p>针对能够支持我(QSIS.CN)的朋友，我提供了一个验证功能，验证授权。平台verify.qsis.cn。这里从注册到服务器端被动验证两种方案外，还提供了补丁发布，客户下载后，注册用户的快捷自动部署功能，以及用户的系统端配置文件备份到服务器等功能，不得不说，我是一个负责任的人，也正在为持续负责而努力...</p><p><strong><a href="https://bbme.qsis.cn/blog/tidhrl.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240710</title>
+<link>https://bbme.qsis.cn/blog/gxz254.html</link>
+<guid>https://bbme.qsis.cn/blog/gxz254.html</guid>
+<pubDate>Wed, 10 Jul 2024 00:00:00 +0800</pubDate>
+<description><p>2024年7月9、10日，对文章编辑页面进行了修改，添加了底部的标签列表和相关帮助，标签列表的功能添加在设置-&amp;gt;扩展标签-&amp;gt;标签列表里，之前这个输入框的内容没有做，只是把功能放在那里了，现在把这个功能完全链接了。</p><p>同时，对系统添加了版权认证功能，其原因是：我无法保证我的程序没有程序bug或...</p><p><strong><a href="https://bbme.qsis.cn/blog/gxz254.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240411 完成系统备份功能开发</title>
+<link>https://bbme.qsis.cn/blog/u1acfd.html</link>
+<guid>https://bbme.qsis.cn/blog/u1acfd.html</guid>
+<pubDate>Fri, 12 Apr 2024 00:00:00 +0800</pubDate>
+<description><p>乔硕近期在做系统备份的功能</p><p></p><p></p><p>你真的没有必要入侵或者下载本程序，因为本程序即将开源。</p></description>
+</item>
+<item>
+<title>Qsis.G.N20240408 添加及修改小说编辑页面bug，添加quill编辑器</title>
+<link>https://bbme.qsis.cn/blog/5atfhv.html</link>
+<guid>https://bbme.qsis.cn/blog/5atfhv.html</guid>
+<pubDate>Mon, 08 Apr 2024 00:00:00 +0800</pubDate>
+<description><p>1、添加了quill编辑器样式，并针对编辑器添加了撤销和重做触控按钮，适用于在手机及移动设备编辑时进行撤销操作。</p><p>2、在设置中添加了编辑区选择选项，两个编辑器可以任意选择更换。选择性大大提高。</p><p>3、同时处于安全考虑，在文本编辑时，例如小说模式和文学模式，我更建议采用quill编辑器，提升全站安全性，因为...</p><p><strong><a href="https://bbme.qsis.cn/blog/5atfhv.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240328 小说功能调整、链接功能调整</title>
+<link>https://bbme.qsis.cn/blog/hbuofv.html</link>
+<guid>https://bbme.qsis.cn/blog/hbuofv.html</guid>
+<pubDate>Thu, 28 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>截止到20240327，小说功能的筛选功能已经完成，同时对设置-》链接进行调整</p><p></p><p></p><p>链接功能，我们采用了拖拽式换位方式，轻松的对排列进行换位，同时同样不采用Jq。我已经猜到您可能会考虑采用这种方式，您可以直接通过我们的程序源代码进行复制，并拷贝走我们的程序代码和片段，但同时，请支持我们的开发，开发团队主要...</p><p><strong><a href="https://bbme.qsis.cn/blog/hbuofv.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>新的想法</title>
+<link>https://bbme.qsis.cn/blog/ooaxjn.html</link>
+<guid>https://bbme.qsis.cn/blog/ooaxjn.html</guid>
+<pubDate>Thu, 28 Mar 2024 00:00:00 +0800</pubDate>
+<description></description>
+</item>
+<item>
+<title>enctype=&quot;multipart/form-data&quot;</title>
+<link>https://bbme.qsis.cn/blog/f5l3k5.html</link>
+<guid>https://bbme.qsis.cn/blog/f5l3k5.html</guid>
+<pubDate>Thu, 21 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>&amp;lt;form action=&amp;quot;&amp;lt;?php echo $_SERVER[&#039;REQUEST_URI&#039;]; ?&amp;gt;&amp;quot;&amp;nbsp; name=&amp;quot;&amp;lt;?php echo $tempid; ?&amp;gt;&amp;quot; id=&amp;quot;&amp;lt;?php echo $a...</p><p><strong><a href="https://bbme.qsis.cn/blog/f5l3k5.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.N20240320 小说模式功能修改</title>
+<link>https://bbme.qsis.cn/blog/gepw0z.html</link>
+<guid>https://bbme.qsis.cn/blog/gepw0z.html</guid>
+<pubDate>Wed, 20 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>近期针对于同时写多部小说、灵感碎片的编写进行了功能编排和添加。</p><p>主要是我的小说已经开始写了，没错，就是一百个英雄，这个小说筹划了快20年了，原因是我身边的那些英雄们，而平时我又有一些其他的身边故事可以用来记载，特别是可以写入小说的生活碎片，所以这里就会涉及到很多问题，章节title和小说name的，这...</p><p><strong><a href="https://bbme.qsis.cn/blog/gepw0z.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.B202403016 添加数据备份功能</title>
+<link>https://bbme.qsis.cn/blog/3nxi1p.html</link>
+<guid>https://bbme.qsis.cn/blog/3nxi1p.html</guid>
+<pubDate>Sat, 16 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>由于系统没有数据库的部署、备份的麻烦，所以让系统更轻松的进行完整备份和同步，没有数据库的困扰，就会完全不用考虑数据库出现的各种问题，甚至可以想当然的使用rsync实时同步，而我目前正在做的模块是打包传输。其实也很简单，可是因为功能重要但不紧急，所以开了个头就停歇了。因为还有更重要的事情，就是小说模式...</p><p><strong><a href="https://bbme.qsis.cn/blog/3nxi1p.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.G.B202403012 多语言更新</title>
+<link>https://bbme.qsis.cn/blog/wbffoo.html</link>
+<guid>https://bbme.qsis.cn/blog/wbffoo.html</guid>
+<pubDate>Tue, 12 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>多种控制台主题和高达31种控制台语言(目前已经完成8种，2024年3月13日将完成所有语言的制作和核对工作)，配合多样且简单的前端主题，组成了全新、全球化的Qsis版本，Qsis.G4.0面市，具体内容将在发布页面介绍</p><p></p><p></p><p></p><p></p><p></p></description>
+</item>
+<item>
+<title>Qsis.W1.B202403011</title>
+<link>https://bbme.qsis.cn/blog/pqrh5b.html</link>
+<guid>https://bbme.qsis.cn/blog/pqrh5b.html</guid>
+<pubDate>Mon, 11 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>严重bug：</p><p>调整首页结构判断、去重。</p><p>调整翻译调用的方式。</p><p>开始启动翻译流程</p><p>修复：长名称调用更改为A1,0EA1的调用模式。</p><p>于今晚完成了后台的中文、英文、和一部分德文以及阿拉伯文的制作。</p><p></p></description>
+</item>
+<item>
+<title>Qsis.W1.B20240302-项目全球化结构启动</title>
+<link>https://bbme.qsis.cn/blog/fkxh3f.html</link>
+<guid>https://bbme.qsis.cn/blog/fkxh3f.html</guid>
+<pubDate>Sat, 02 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>一个没有数据库，又不需要修改，就可以拿起来直接用的产品，对于浮躁的中国人来说，可能php都已经落后了，我接到了很多人的态度，就是php很落后。</p><p>对于我的php程序，我可以说很落后，因为这里不存在框架的概念从css框架到javascript框架，基本都没有使用，主打的就是简单和安全。</p><p>面向全球化的目的只有...</p><p><strong><a href="https://bbme.qsis.cn/blog/fkxh3f.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis.W1.B20240301</title>
+<link>https://bbme.qsis.cn/blog/1tz12j.html</link>
+<guid>https://bbme.qsis.cn/blog/1tz12j.html</guid>
+<pubDate>Sat, 02 Mar 2024 00:00:00 +0800</pubDate>
+<description><p>近期修改了几个主题的css样式，还是修改bug，主要是因为之前的样式实在拿不出手，还有的时候会现在响应式错误和错位。一次改掉了black黑紫色，彩虹，等几个主要主题的样式。</p><p>修改function文件内的错误，添加新功能函数</p><p>添加后台管理选项卡，允许对后台管理的样式、文章列表数字进行配套更改的同时，重新调...</p><p><strong><a href="https://bbme.qsis.cn/blog/1tz12j.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>有一些网站提供免费下载网页背景视频</title>
+<link>https://bbme.qsis.cn/blog/ijdiyv.html</link>
+<guid>https://bbme.qsis.cn/blog/ijdiyv.html</guid>
+<pubDate>Thu, 29 Feb 2024 00:00:00 +0800</pubDate>
+<description><p><strong><a href="https://bbme.qsis.cn/blog/ijdiyv.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Fatal error: Uncaught Error: Call to undefined function</title>
+<link>https://bbme.qsis.cn/blog/mhm2uh.html</link>
+<guid>https://bbme.qsis.cn/blog/mhm2uh.html</guid>
+<pubDate>Thu, 29 Feb 2024 00:00:00 +0800</pubDate>
+<description></description>
+</item>
+</channel>
+</rss>
