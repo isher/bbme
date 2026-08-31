@@ -5,8 +5,22 @@
 <link>https://bbme.qsis.cn/</link>
 <description>bbme.qsis.cn是专注 Qsis 系列 CMS 系统开发的乔硕个人技术博客，记录 Qsis.G3M 等版本迭代、功能开发与技术问题解决，同时分享IT技术与生活小思考的日常内容。</description>
 <language>zh-cn</language>
-<lastBuildDate>Wed, 12 Aug 2026 17:36:44 +0800</lastBuildDate>
+<lastBuildDate>Tue, 01 Sep 2026 00:04:55 +0800</lastBuildDate>
 <atom:link href="https://bbme.qsis.cn/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>从单一SSG进化至多静态站点功能</title>
+<link>https://bbme.qsis.cn/blog/ilc1vi.html</link>
+<guid>https://bbme.qsis.cn/blog/ilc1vi.html</guid>
+<pubDate>Mon, 31 Aug 2026 00:00:00 +0800</pubDate>
+<description><p>QsisCMS（QScms）原有的static site(ssg)功能进行全面改版。原有ssg功能在设置页面下，仅能实现单一网站的静态化功能，而我在半睡半醒的工作状态下，突然想到了一个生成多站点的想法，于是决定大改版，转移ssg和github rsync功能，移到设置set.php下，多站点建立（多...</p><p><strong><a href="https://bbme.qsis.cn/blog/ilc1vi.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
+</item>
+<item>
+<title>Qsis CMS（QSCMS）已经完全兼容Markdown格式的导出和导入</title>
+<link>https://bbme.qsis.cn/blog/oqgo5e.html</link>
+<guid>https://bbme.qsis.cn/blog/oqgo5e.html</guid>
+<pubDate>Sat, 15 Aug 2026 00:00:00 +0800</pubDate>
+<description><p>2026年8月 15日 更新 跨平台跨体系砼结构上，QsisCms已经在一部完美兼容Markdodwn的导入和导出功能，支持单篇文章和多篇文章的批量操作。</p><p></p><p></p></description>
+</item>
 <item>
 <title>winrar注册码激活码</title>
 <link>https://bbme.qsis.cn/blog/3dx50k.html</link>
@@ -202,20 +216,6 @@
 <guid>https://bbme.qsis.cn/blog/1tz12j.html</guid>
 <pubDate>Sat, 02 Mar 2024 00:00:00 +0800</pubDate>
 <description><p>近期修改了几个主题的css样式，还是修改bug，主要是因为之前的样式实在拿不出手，还有的时候会现在响应式错误和错位。一次改掉了black黑紫色，彩虹，等几个主要主题的样式。</p><p>修改function文件内的错误，添加新功能函数</p><p>添加后台管理选项卡，允许对后台管理的样式、文章列表数字进行配套更改的同时，重新调...</p><p><strong><a href="https://bbme.qsis.cn/blog/1tz12j.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
-</item>
-<item>
-<title>有一些网站提供免费下载网页背景视频</title>
-<link>https://bbme.qsis.cn/blog/ijdiyv.html</link>
-<guid>https://bbme.qsis.cn/blog/ijdiyv.html</guid>
-<pubDate>Thu, 29 Feb 2024 00:00:00 +0800</pubDate>
-<description><p><strong><a href="https://bbme.qsis.cn/blog/ijdiyv.html" target="_blank">点击进入深悟笔记 | 卑鄙的我阅读全文</a></strong></p></description>
-</item>
-<item>
-<title>Fatal error: Uncaught Error: Call to undefined function</title>
-<link>https://bbme.qsis.cn/blog/mhm2uh.html</link>
-<guid>https://bbme.qsis.cn/blog/mhm2uh.html</guid>
-<pubDate>Thu, 29 Feb 2024 00:00:00 +0800</pubDate>
-<description></description>
 </item>
 </channel>
 </rss>
